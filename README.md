@@ -31,12 +31,12 @@
 ## TEAM EXPERTS
 
 
+* Adriana Avalos [![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/) [![GitHub](images/smgthb.png)](https://github.com/Adriana-Avalos-Vargas)
 
 
 ### Adriana Avalos [![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/) [![GitHub](images/smgthb.png)](https://github.com/Adriana-Avalos-Vargas)
 
-### Laura Torres 
-[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/lauratorresfdz/) [![GitHub](images/smgthb.png)](https://github.com/ltorresfdz)
+### Laura Torres [![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/lauratorresfdz/) [![GitHub](images/smgthb.png)](https://github.com/ltorresfdz)
 
 ### Pamela Hernandez [![Linkedin](images/smlkdin.png)](http://www.linkedin.com/in/pamelahvv) [![GitHub](images/smgthb.png)](https://github.com/PamHvv14)
 
