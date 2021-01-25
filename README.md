@@ -15,6 +15,8 @@
 <br>
 
 ## `Measure social media impact on your brand building, by consulting the best campaign post success meter!`
+
+
 <br>
 <br>
 
@@ -137,6 +139,9 @@ b. OUTPUT FEATURES: metrics or KPI's
 * Life Time Post Total Reach: # of people who just saw the page post 
 <br>
 
+
+
+
 ## 2. Tune Model Parameters
 
 * Used `MinMaxScaler` to scale the numerical data.
@@ -148,6 +153,33 @@ b. OUTPUT FEATURES: metrics or KPI's
     * `K nearest neighbors (KNN)`
     * `Neural Network`
 * Model Selection: given the best results we have selected `Random Forest Classifier (RFC)` as our main predictor model to be applied on our app. 
+
+<br>
+
+
+#####FIRST DEPLOY
+
+
+![First Deploy](Images/Tree1First-Deploy.png)
+
+<br>
+
+
+#####ONE HUNDRED TREE
+
+
+![Successful Scenario](Images/Tree2OneHundred-Tree.png)
+
+
+<br>
+
+
+#####TWO HUNDRED TREE
+
+
+
+![Successful Scenario](Images/Tree3TwoHundred-Tree.png)
+
 <br> 
 
 
@@ -187,12 +219,32 @@ b. OUTPUT FEATURES: metrics or KPI's
 ## 4. Insights
  
 * Our Model can tell us:
-    1. caso no positivo
-    2. simulaciones
-    3. mas negativos que positivos
-    4. positivos mucha dispersion
-    5. datos no estandarizados
-    6. Confussion matrix shows us how well predictions are deployed by our RF model. Our model cofidence is ....
+    1.
+
+    <br>
+
+    2. Decision of ML model becomes a core decision, but definition and selection of dataset has always a cumbersome place in the Data Analytics projects.
+
+    <br>
+
+
+    3. Further exploration: Recommendation algorithm instead of prediction. Be able to recommend when a post should be uploaded based on category and type. Look for a larger dataset maybe of another industry.
+
+    <br>
+
+    4. According to the authors of the db, data was colected from the facebook page of a cosmetic brand, therefore the algorith is most likely to work for a certain kind of crowd. Perhaps only women.
+
+    <br>
+
+    5. Also the model is most likely to recognize negative cases due to the proportion of them in the database 1:2. Positive cases are much more disperse, so we should be working on a more homogeneous and equate cases data base.
+
+    <br>
+
+    6. Another important thing is that most of the posts where photos, therfore it is necessary to extend the db.
+
+    <br>
+
+    7. Confussion matrix shows us how well predictions are deployed by our RF model and the confidence level of our model. The printed matrix let us know the results of false-positives, the positives that are well classified, the positive negatives and what was classified negative when were positive. 
 
     ![Confussion Matrix](Images/conf_mat.png)
 
