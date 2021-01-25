@@ -1,36 +1,36 @@
-# THE POST*METER 
+# THE POSTS*METER 
 *A Machine Learning social media posts evaluator app*
 <br>
 
-![socialmedia gif](images/Social-Media-Marketing.gif)
+![socialmedia](images/Social-Media-Marketing.gif)
 
 <br>
 
 # PUZZLED MEDIA ANALYTICS.INC 
-##*"Your challenge become our Mission"*
+## *"Your challenge become our Mission"*
 
 <br>
 
-##`Measure social media impact on your brand building, by consulting the best campaign post success meter!`
+## `Measure social media impact on your brand building, by consulting the best campaign post success meter!`
 <br>
 <br>
 
-![brandbuild.jpg](images/Brand-Building.jpg)
+![brandbuild](images/Brand-Building.jpg)
 
 ---
 <br>
 ## TEAM EXPERTS
 
-###`Adriana Avalos`[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/)[![GitHub](images/smgthb.png)](https://github.com/Adriana-Avalos-Vargas)
+### `Adriana Avalos`[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/)[![GitHub](images/smgthb.png)](https://github.com/Adriana-Avalos-Vargas)
 
-###`Laura Torres`[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/lauratorresfdz/)[![GitHub](images/smgthb.png)](https://github.com/ltorresfdz)
+### `Laura Torres`[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/lauratorresfdz/)[![GitHub](images/smgthb.png)](https://github.com/ltorresfdz)
 
-###`Pamela Hernandez`[![Linkedin](images/smlkdin.png)](http://www.linkedin.com/in/pamelahvv)[![GitHub](images/smgthb.png)](https://github.com/PamHvv14)
+### `Pamela Hernandez`[![Linkedin](images/smlkdin.png)](http://www.linkedin.com/in/pamelahvv)[![GitHub](images/smgthb.png)](https://github.com/PamHvv14)
 
-###`Clemente Sanchez`[![Linkedin](images/smlkdin.png)](http://www.linkedin.com/in/clemente21)[![GitHub](images/smgthb.png)](https://github.com/ClementsMX)
+### `Clemente Sanchez`[![Linkedin](images/smlkdin.png)](http://www.linkedin.com/in/clemente21)[![GitHub](images/smgthb.png)](https://github.com/ClementsMX)
 
 
-###`Gabby Olivares`[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/gabbyloamiolivares/)[![GitHub](images/smgthb.png)](https://github.com/GabbyOlivares)
+### `Gabby Olivares`[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/gabbyloamiolivares/)[![GitHub](images/smgthb.png)](https://github.com/GabbyOlivares)
 
 <br>
 <br>
@@ -60,10 +60,10 @@ Both, are steps that customer takes on the path to a purchase or becoming a loya
 
 <br>
 
-####Objective 
+#### Objective 
 * Predicting the impact of publishing individual posts on a given social network company’s page.
 
-####Future Scope 
+#### Future Scope 
 * Create a model that performs posts recommendations based on selected features
 
 
@@ -156,7 +156,7 @@ b. OUTPUT FEATURES: metrics or KPI's
 
     <br>
 
-##OUTCOME: 
+## OUTCOME: 
 **in the web page we can see our Random Forest model using Flask, deployed and ready to predict sucessful or unsuccessful social media posts according to selected feature inputs from the user, submitting the request and getting a prediction (recommendation) result.** 
 <br>
 
@@ -164,7 +164,7 @@ b. OUTPUT FEATURES: metrics or KPI's
 
 <br>
 
-##**VS**
+## **VS**
 
 <br>
 
@@ -178,7 +178,7 @@ b. OUTPUT FEATURES: metrics or KPI's
 
 
 ## 4. Insights
-
+ 
 * Our Model can tell us:
     1. caso no positivo
     2. simulaciones
@@ -230,8 +230,6 @@ b. OUTPUT FEATURES: metrics or KPI's
 ##### BRANDING AND SOCIAL MEDIA DOCUMENTATION
 * [Most popular Social Media Platforms 1997-2020](https://www.youtube.com/watch?v=ihnUg0_eS8Q)
 
-* [Predicting social media performance metrics](1references/Predicting_social_media_performance_metr)
-
 * [IAB estudio de inversion en comunicacion, Mexico](https://www.iabmexico.com/estudios/estudio-de-inversion-en-comunicacion-en-internet-2020-resultados-2019/)
 
 * [Mexico, social network penetration 2017-2025](https://www.statista.com/statistics/290208/social-network-penetration-in-mexico/)
@@ -264,8 +262,8 @@ b. OUTPUT FEATURES: metrics or KPI's
     * Bootstrap
     * JavaScript/D3.js
     * Machine learning and joblib
-    * Flask
-    * Heroku
+    * Flask (local deployment)
+    * Heroku (web deployment)
 
 * Create a front-end interface that maps to an API to “smarten” the algorithm.
 
