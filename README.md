@@ -3,7 +3,7 @@
 <br>
 
 
-![socialmediagif](images/Social-Media-Marketing.gif)
+![socialmediagif](images/unnamed.png)
 
 
 
@@ -21,7 +21,7 @@
 <br>
 
 
-![brandbuilding](Images/InfografiaConsumoMedios&Dispositivos.jpg)
+![brandbuilding](Images/Brand-Building.jpg)
 
 
 
@@ -29,8 +29,7 @@
 <br>
 ## TEAM EXPERTS
 
-###Adriana Avalos
-[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/)[![GitHub](images/smgthb.png)](https://github.com/Adriana-Avalos-Vargas)
+###Adriana Avalos[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/)[![GitHub](images/smgthb.png)](https://github.com/Adriana-Avalos-Vargas)
 
 ###Laura Torres[![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/lauratorresfdz/)[![GitHub](images/smgthb.png)](https://github.com/ltorresfdz)
 
