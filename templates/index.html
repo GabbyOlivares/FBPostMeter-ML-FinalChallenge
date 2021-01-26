@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Postmeter - Facebook metrics analysis</title>
+        <meta http-equiv = "x-ua-compatible" content="ie-edge">
+        <title>Posts*Meter - Facebook metrics analysis</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -13,8 +14,19 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../static/css/styles.css" rel="stylesheet" />
+        <!-- D3-->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>  
+        <script src="https://stackpath.boots trapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- Bubble Chart-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -27,9 +39,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Behind the Scenes</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">ML App</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Key Factors</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">How it Works?</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Importance</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
@@ -39,42 +51,36 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Postmeter!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Try out ML App</a>
+                <div class="masthead-subheading">Welcome To Posts*Meter!</div>
+                <div class="masthead-heading text-uppercase">Analyze your Facebook company´s posts</div>
+                <a class="btn btn-primary btn-xl text-upperc ase js-scroll-trigger" href="https://www.youtube.com/watch?v=ihnUg0_eS8Q">Click to see Social Media Rank history!</a>
             </div>
         </header>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Behind the Scenes</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Key Factors</h2>
+                    <h3 class="section-subheading text-muted">Analyze your posts statistics. Know who likes you the most. Improve your marketing strategy. Find loyas users. Be the first!</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <img class="img-fluid" src="../static/assets/img/target.png" alt="" />
+                        <h4 class="my-3">Accuracy</h4>
+                        <p class="text-muted">The model is based on a machine learning algorithm proven to work with an accuracy of 86%.</p>
                     </div>
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <img class="img-fluid" src="../static/assets/img/time3.png" alt="" />
+                        <h4 class="my-3">Time Saving</h4>
+                        <p class="text-muted">It saves a huge amount of time for your community manager and marketing department.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">Security</h4>
+                        <p class="text-muted">Your data is not stored anywhere. Only you will be able to see it! There is no need to share any information of your FB company´s account.</p>
                     </div>
                 </div>
             </div>
@@ -83,178 +89,232 @@
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Run Scenarios</h2>
-                    <h3 class="section-subheading text-muted">Choose one of the following scenarios to see our app working.</h3>
+                    <h2 class="section-heading text-uppercase">How it Works?</h2>
+                    <h3 class="section-subheading text-muted">This machine learning model helps predict if your post will be succesful or unsuccesful.</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="../static/assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="../static/assets/img/happy.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Successful Post</div>
-                                <div class="portfolio-caption-subheading text-muted">Click to review the outcome</div>
+                                <div class="portfolio-caption-heading">Successful Posts</div>
+                                <div class="portfolio-caption-subheading text-muted">Click to review the results</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="../static/assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="../static/assets/img/wrong-multicolor-icon-with-png-and-vector-format-for-free-wrong-png-512_512.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Failure Post</div>
+                                <div class="portfolio-caption-heading">Failure Posts</div>
                                 <div class="portfolio-caption-subheading text-muted">Click to review the results</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="../static/assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="../static/assets/img/unnamed.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Customizable Scenario</div>
-                                <div class="portfolio-caption-subheading text-muted">Click to evaluate your Posts</div>
+                                <div class="portfolio-caption-heading">Try it!</div>
+                                <div class="portfolio-caption-subheading text-muted">Try our model with your OWN information</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="../static/assets/img/man-head-ai-circle-icon-vector-27719478.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">How it Works?</div>
+                                <div class="portfolio-caption-subheading text-muted">Click here to deep dive into the model and understand how it works!</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+            <div class="container.fluid">
+                <!--Add another container to "center" content-->
+                <div class = "container-fluid">
+                <div id="bubble"></div>    
+                <!--End  of the fluid containers, do not errase-->
+                </div>
+            </div>
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+            <script src="../static/js/bubble.js"></script>
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Why is this important?</h2>
+                    <h3 class="section-subheading text-muted">Social Media plays an important role for companies nowadays, here you can see how:</h3>
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/1.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/socialmedia-mn2s.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4 class="subheading">Brand Identity</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">Social media publications are highly related to brand building and brand recognition and the higher the level of  engagement and interaction in any action or any parameter, the most important the feature to build this awareness and recognition.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/2.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/images.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                                <h4 class="subheading">Penetration</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">In Mexico 84% of people use social media, and 61% follows at least one company or brand.</p></div>
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/3.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/love-512.png" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+                                <h4 class="subheading">Interaction</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">57% of social media users that follow a brand have written/commented or review it.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/4.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/customer-engagement.png" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
+                                <h4 class="subheading">User Engagement</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">Through social media a customer can have a full experiance: explore your brand, buy, receive, review, and if it meet his/her expectations buy again! This of course if your posts are right!</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
-                                Be Part
+                                And
                                 <br />
-                                Of Our
+                                More
                                 <br />
-                                Story!
+                                ...
                             </h4>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section>
+        <!-- FB importance-->
+            <div class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <a href="https://www.kaggle.com/masoodanzar/facebook-metrics"><img class="img-fluid d-block mx-auto" src="../static/assets/img/Chart3bubble.png" alt="" /></a>
+                         <p class="section-subheading text-muted">Click the chart to visit our DATA SOURCE!</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="section-heading text-uppercase">Countries with the most Facebook users 2020</p> 
+            </div>
+            <div id="map"></div>
+            <div class="text-center">
+                <div class="col-xs-12 col-md-12">
+                <p class="section-heading text-uppercase">   </p>
+                <p class="section-heading text-uppercase">Number of Users and Penetration rates, Mexico</p>
+                <p class="section-heading text-uppercase">Social Media: FACEBOOK</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12  col-md-9">
+                  <div id="plot">
+                    <!-- We append our chart here. -->
+                </div>
+                <select id="selDataset">
+                  <option value="dataset1">FB #users</option>
+                  <option value="dataset2">Penetration %rate</option>
+                </select>
+         </section>
+
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Meet our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Team of 5 outstanding professionals!</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/1.jpg" alt="" />
-                            <h4>Kay Garland</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/clemen.jpg" alt="" />
+                            <h4>Clemente Sanchez</h4>
+                            <p class="text-muted">CEO</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/ClementsMX"><i class="fab fa-github"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="http://www.linkedin.com/in/clemente21"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/2.jpg" alt="" />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/adri.jpg" alt="" />
+                            <h4>Adriana Avalos</h4>
+                            <p class="text-muted">CIO</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/Adriana-Avalos-Vargas"><i class="fab fa-github"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/3.jpg" alt="" />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/3.jpg" alt="" />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/3.jpg" alt="" />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/dr-adriana-avalos-51003b147/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/pam.jpeg" alt="" />
+                            <h4>Pamela Hernandez</h4>
+                            <p class="text-muted">COO</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/PamHvv14"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/pamela.hvv"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/pamelahvv"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/lau.jpg" alt="" />
+                            <h4>Laura Torres</h4>
+                            <p class="text-muted">CFO</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/ltorresfd"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/lauratorresfdz/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="../static/assets/img/team/gaby.jpg" alt="" />
+                            <h4>Gabriela Olivares</h4>
+                            <p class="text-muted">CMO</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/GabbyOlivares"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/gabbyloamiolivares/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                 </div>
             </div>
         </section>
@@ -263,7 +323,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Send us any comment / question / concern.</h3>
                 </div>
                 <form id="contactForm" name="sentMessage" novalidate="novalidate">
                     <div class="row align-items-stretch mb-5">
@@ -301,7 +361,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-left">Copyright © Bootcamp Final Project Team 1 2021</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
@@ -323,23 +383,58 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Customizable Scenario</h2>
-                                    <p class="item-intro text-muted">Please choose the combination to predict whether the post will be successful or not .</p>
-                                        <br>
-
-
-                                    <!--
-                                    <img class="img-fluid d-block mx-auto" src="../static/assets/img/portfolio/01-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul>
-                                    -->
+                                    <h2 class="text-uppercase">Succesful Posts</h2>
+                                    <p class="item-intro text-muted">Parameters of 3 succesful posts</p>
+                                    <img class="img-fluid d-block mx-auto" src="../static/assets/img/portfolio/succes.png" alt="" />
+                                    <table>
+                                        <tr>
+                                          <th>Page Likes</th>
+                                          <th>Type</th>
+                                          <th>Category</th>
+                                          <th>Month</th>
+                                          <th>Day</th>
+                                          <th>Hour</th>
+                                          <th>Paid</th>
+                                          <th>Reach</th>
+                                          <th>Result</th>
+                                        </tr>
+                                        <tr>
+                                         <td>139,441</td>
+                                          <td>Photo</td>
+                                          <td>Product</td>
+                                          <td>12</td>
+                                          <td>Monday</td>
+                                          <td>10</td>
+                                          <td>No</td>
+                                          <td>50,128</td>
+                                          <td>Succesful</td>
+                                        </tr>
+                                        <tr>
+                                           <td>136,013</td>
+                                          <td>Status</td>
+                                          <td>Product</td>
+                                          <td>10</td>
+                                          <td>Tuesday</td>
+                                          <td>2</td>
+                                          <td>No</td>
+                                          <td>31,136</td>
+                                          <td>Succesful</td>
+                                        </tr>
+                                      <tr>
+                                           <td>138,855</td>
+                                          <td>Video</td>
+                                          <td>Action</td>
+                                          <td>7</td>
+                                          <td>Tuesday</td>
+                                          <td>8</td>
+                                          <td>No</td>
+                                          <td>34,277</td>
+                                          <td>Succesful</td>
+                                        </tr>
+                                    </table>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -358,18 +453,70 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../static/assets/img/portfolio/02-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
-                                    </ul>
+                                    <h2 class="text-uppercase">Unsuccesful Posts</h2>
+                                    <p class="item-intro text-muted">Parameters of 3 unsuccesful posts</p>
+                                    <p class="item-intro text-muted"></p>
+                                    <img class="img-fluid d-block mx-auto" src="../static/assets/img/portfolio/fail.png" alt="" />
+                                    <table>
+                                        <tr>
+                                          <th>Page Likes</th>
+                                          <th>Type</th>
+                                          <th>Category</th>
+                                          <th>Month</th>
+                                          <th>Day</th>
+                                          <th>Hour</th>
+                                          <th>Paid</th>
+                                          <th>Reach</th>
+                                          <th>Result</th>
+                                        </tr>
+                                        <tr>
+                                         <td>139,441</td>
+                                          <td>Photo</td>
+                                          <td>Inspiration</td>
+                                          <td>12</td>
+                                          <td>Tuesday</td>
+                                          <td>3</td>
+                                          <td>Yes</td>
+                                          <td>2,413</td>
+                                          <td>Unsuccesful</td>
+                                        </tr>
+                                        <tr>
+                                           <td>138,895</td>
+                                          <td>Video</td>
+                                          <td>Action</td>
+                                          <td>12</td>
+                                          <td>Wednesday</td>
+                                          <td>11</td>
+                                          <td>No</td>
+                                          <td>36,208</td>
+                                          <td>Unsuccesful</td>
+                                        </tr>
+                                      <tr>
+                                           <td>135,713</td>
+                                          <td>Status</td>
+                                          <td>Product</td>
+                                          <td>10</td>
+                                          <td>Saturday</td>
+                                          <td>4</td>
+                                          <td>Yes</td>
+                                          <td>10,744</td>
+                                          <td>Unsuccesful</td>
+                                        </tr>
+                                      <tr>
+                                           <td>102,112</td>
+                                          <td>Link</td>
+                                          <td>Inspiration</td>
+                                          <td>3</td>
+                                          <td>Sunday</td>
+                                          <td>3</td>
+                                          <td>Yes</td>
+                                          <td>6,876</td>
+                                          <td>Unsuccesful</td>
+                                        </tr>
+                                    </table>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -396,19 +543,19 @@
                                                 <br>Avg Page Likes:<br>
                                                 <input id="avgpagelikes" name="avgpagelikes" type="number" class="form-control" required>
                                                 <br>
-                                                <br>Post Type:<br>
+                                                <br>Post Type 1 = Link, 2 = Photo, 3 = Status, 4 = Video<br>
                                                 <input id="posttype" name="posttype" type="number" class="form-control" required>
                                                 <br>
                                                 <br>Post Category 1 = Action, 2 = Product 3 = Inspiration <br>
                                                 <input id="postcategory" name="postcategory" type="number" class="form-control" required>
                                                 <br>
-                                                <br>Publication Month<br>
+                                                <br>Publication Month (1 - 12)<br>
                                                 <input id="month" name="month" type="number" class="form-control" required>
                                                 <br>
-                                                <br>Publication Week<br>
+                                                <br>Publication Week Day (0 -7 starting Sunday)<br>
                                                 <input id="weekday" name="weekday" type="number" class="form-control" required>
                                                 <br>
-                                                <br>Publicatoin Hour<br>
+                                                <br>Publication Hour (1 - 23 HRS)<br>
                                                 <input id="hour" name="hour" type="number" class="form-control" required>
                                                 <br>
                                                 <br>Paid Publication? 0 = Yes 1 = No <br>
@@ -421,8 +568,93 @@
                                         </form>
                                         <br>
                                         <h1>The post will be:</h1>
-                                        <div id="result" style="font-size:50px" align="center">
+                                        <div id="result" style="font-size:50px" text-align="center">
                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="../static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">How it works</h2>
+                                    <p class="item-intro text-muted">This is a general step by step explanation, please contact us if any doubts.</p>
+                                    <img class="img-fluid d-block mx-auto" src="../static/assets/img/conf_mat.png" alt="" />
+                                    <textarea rows="50" cols="100">
+1. Data Exploration and Data Mining 
+Pre-processing the raw Data. 
+Data selection and Data Base:
+490 rows containing the information about the posts published on a cosmetics company’s Facebook page. 
+[Data source: USI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Facebook+metrics)
+
+Pre-process the dataset prior to fitting the model.
+
+1. Data exploration:
+Data exploration is done both in R as in Python. The main objective is to know the data and see which are its strengths and weaknesses. In both files it is explored through plots, and a few hypothesis tests.
+Originally, the data is composed by 19 features and 500 observations. Three of the features are categorical variables. The rest are continuous variables, which are distributed around certain value but they are skewed to the right. It is also observed that data is very dispersed, has NAN values, and outliers. Also, it has to be noted that data does not include a label that indicates the success or failure of a post.
+
+2.	Data cleaning:
+The first thing we’ve done is to take put the NA observations which turns out to be five of them. Then we select three variables (like, comment, and post) and look for outliers in these three features, and remove them.
+
+3.	First Data clustering:
+Once the outliers are removed, then these three features are scaled and a unsupervised method (k Means) is used to generate two groups (unsuccessful posts “0” and successful posts “1”). The result turns out to be unbalanced since there are 434 negative cases and only 56 of them positive. Since we want a robust model prediction then some simulations are done.
+
+4.	Data simulation:
+In R it is simulated 227 data considering only the 56 positive cases. All the features (except the cluster is simulated).
+
+5.	Second Data clustering:
+The simulated data and the original one is bind in a single data frame which is used again to generate two cluster. The result is an unsuccessful group of 456 observations and a successful group of 261 observations which might lead to a more robust ML model.
+
+Feature Selection
+We applied a feature selection according to their importance and statistical weight in the data base.
+
+a. INPUT FEATURES (LABELS): Content categorization
+* Category:
+    * action (1)= special offers and contests
+    * product (2)= direct advertisement, explicit brand content
+    * inspiration (3)= non-explicit brand related content
+* Post type: 
+    * Link
+    * Photo
+    * Status
+    * Video
+* Post month: January to December
+* Post hour: from 1 to 23 hr
+* Post weekday: from Monday to Sunday
+* Paid: if the company paid or not to FB for advertising
+    Yes = 0
+    No = 1
+
+b. OUTPUT FEATURES: metrics or KPI's
+* Page total likes: # of likes on a publication from people who saw the page post 
+* Life Time Post Total Reach: # of people who just saw the page post 
+
+2. Tune Model Parameters
+
+* Used `MinMaxScaler` to scale the numerical data.
+* Separated the data into training and testing model. We used our selected features to trained and tested our model to predict the probability and determine if a post will be successful or not. 
+* Tuned and compared different classifiers. Models tested were: 
+    * `Logistic Regression (LR)` 
+    * `Decision Tree (DT)`
+    * `Random Forest Classifier (RFC)` 
+    * `K nearest neighbors (KNN)`
+    * `Neural Network`
+* Model Selection: given the best results we have selected `Random Forest Classifier (RFC)` as our main predictor model to be applied on our app. 
+                                    </textarea>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -438,12 +670,18 @@
         <!-- Contact form JS-->
         <script src="../static/assets/mail/jqBootstrapValidation.js"></script>
         <script src="../static/assets/mail/contact_me.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>  <!--DataVisInteractive 15.3-6:display graph on screen -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script> <!--D3js 16.3-12:gives movement and axis transitions-->
-
         <!-- Core theme JS-->
         <script src="../static/js/scripts.js"></script>
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+        <!-- API key -->
+        <script type="text/javascript" src="../static/js/config2.js"></script>
+        <!-- Charts JS -->
+        <script type="text/javascript" src="../static/js/logic2.js"></script>
+        <script src="../static/js/FBusers.js"></script>
+        <!-- Model -->
         <script src="../static/js/model.js"></script>
     </body>
 </html>

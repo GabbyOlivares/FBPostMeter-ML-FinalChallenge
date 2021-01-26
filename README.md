@@ -1,4 +1,4 @@
-# THE POSTS*METER 
+# WELCOME TO POSTS*METER! 
 *A Machine Learning social media posts evaluator app*
 <br>
 
@@ -29,9 +29,6 @@
 <br>
 
 ## TEAM EXPERTS
-
-
-* Adriana Avalos [![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/) [![GitHub](images/smgthb.png)](https://github.com/Adriana-Avalos-Vargas)
 
 
 ### Adriana Avalos [![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/) [![GitHub](images/smgthb.png)](https://github.com/Adriana-Avalos-Vargas)
@@ -66,10 +63,33 @@ Social media publications are highly related to brand building and brand recogni
 
 Both, are steps that customer takes on the path to a purchase or becoming a loyal brand advocate.
 
-[Branding facts](https://simplicable.com/new/brand-recognition-vs-brand-awareness#:~:text=Brand%20recognition%20is%20the%20extent,general%20impressions%20about%20your%20brand.)
+[Branding facts, Mexico](https://simplicable.com/new/brand-recognition-vs-brand-awareness#:~:text=Brand%20recognition%20is%20the%20extent,general%20impressions%20about%20your%20brand.)
 
 
 ![Digital Media Consupmtion in Mexico, infographics](Images/InfografiaConsumoMedios&Dispositivos.jpg)
+
+
+<br>
+
+##### MAIN COUNTRIES WITH THE MOST FACEBOOK USERS, 2020
+
+![Main countries](Images/Chart1Map.png)
+
+
+
+##### NUMBER OF USERS AND PENETRATION RATES, MEXICO. SOCIAL MEDIA: FACEBOOK
+
+![Mexico #Users](Images/Chart2NumberFBusersMexico.png)
+
+
+![Mexico Penetration%](Images/Chart2PenetrationRateFBMexico.png)
+
+
+##### BUBBLE CHART
+
+
+
+![Mexico Penetration%](Images/Chart3bubble.png)
 
 <br>
 
@@ -161,7 +181,7 @@ b. OUTPUT FEATURES: metrics or KPI's
 <br>
 
 
-#####FIRST DEPLOY
+##### FIRST DEPLOY
 
 
 ![First Deploy](Images/Tree1First-Deploy.png)
@@ -169,7 +189,7 @@ b. OUTPUT FEATURES: metrics or KPI's
 <br>
 
 
-#####ONE HUNDRED TREE
+##### ONE HUNDRED TREE
 
 
 ![Successful Scenario](Images/Tree2OneHundred-Tree.png)
@@ -178,7 +198,7 @@ b. OUTPUT FEATURES: metrics or KPI's
 <br>
 
 
-#####TWO HUNDRED TREE
+##### TWO HUNDRED TREE
 
 
 
@@ -223,32 +243,34 @@ b. OUTPUT FEATURES: metrics or KPI's
 ## 4. Insights
  
 * Our Model can tell us:
-    1.
+    1. Contrary to what any marketer can say, engagement is not the major weigthed feature to consider, but the number of likes and total reach. So, main KPI's within any marketing strategy should consider both of these.
 
     <br>
 
-    2. Decision of ML model becomes a core decision, but definition and selection of dataset has always a cumbersome place in the Data Analytics projects.
+    2. The ML model selection becomes a core decision, but definition and selection of dataset has always a cumbersome place in the Data Analytics projects.
 
     <br>
 
 
-    3. Further exploration: Recommendation algorithm instead of prediction. Be able to recommend when a post should be uploaded based on category and type. Look for a larger dataset maybe of another industry.
+    3. Further exploration is needed: In the near future, we will consider to create a Recommendation algorithm instead of prediction, able to recommend when a post should be uploaded based on category and type. 
 
     <br>
 
-    4. According to the authors of the db, data was colected from the facebook page of a cosmetic brand, therefore the algorith is most likely to work for a certain kind of crowd. Perhaps only women.
+    4. Also, look for a larger dataset, which can consider another industires as well as broadening the target people profile.    
+    According to the authors, data was colected from the facebook page of a cosmetic brand, therefore the algorith is most likely to work for a certain kind of crowd. Perhaps only women.
 
     <br>
 
-    5. Also the model is most likely to recognize negative cases due to the proportion of them in the database 1:2. Positive cases are much more disperse, so we should be working on a more homogeneous and equate cases data base.
+    6. Additionally, most of the posts where photos, therfore it is necessary to work on a extended version of the data base, having much more heterogeneous type cases to work with.
 
     <br>
 
-    6. Another important thing is that most of the posts where photos, therfore it is necessary to extend the db.
+    6. The model is most likely to recognize negative cases due to the proportion of them in the original database which we arrange 1:2. Positive cases are much more disperse, so we should be working on a more homogeneous and equate cases data base.
 
     <br>
 
-    7. Confussion matrix shows us how well predictions are deployed by our RF model and the confidence level of our model. The printed matrix let us know the results of false-positives, the positives that are well classified, the positive negatives and what was classified negative when were positive. 
+    7. Since we have two possible labels (0 and 1), the confusion matrix shows the correct predictions and incorrect labels, compared to the actual ones. Each row in the confusion matrix shows the true  labels in the test set, and the columns show the labels predicted by the random forest classifier. The first row is for labels whose actual value in the test set is 0. It is observed that from 135 cases. Of these 135 cases the classifier correctly predicted 120 of them as 0, and 15 of them as 0. In the second row the cases are presented with original label equal to 1. There were 79 cases in this situation. The classifier correctly predicted 64 of them as one, and 15 of them wrongly predicted as 0. Therefore, the classifier has done a good job of predicting the cases with label equal to 0. 
+
 
     ![Confussion Matrix](Images/conf_mat.png)
 
@@ -344,7 +366,7 @@ b. OUTPUT FEATURES: metrics or KPI's
 * Included a README.md file that summarizes our job, assumptions and insights.
 
 * Created and upload our job on Github Repository
- [POST*METER ML app repository, click here!](https://github.com/GabbyOlivares/FBPostMeter-ML-FinalChallenge)
+ [POSTS*METER ML app repository, click here!](https://github.com/GabbyOlivares/FBPostMeter-ML-FinalChallenge)
 
 
 ##### © 2020 Puzzled Media Analytics Inc., BootCamp Tecnologico de Monterrey. All Rights Reserved. 
