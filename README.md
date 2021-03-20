@@ -66,7 +66,7 @@ Both, are steps that customer takes on the path to a purchase or becoming a loya
 [Branding facts, Mexico](https://simplicable.com/new/brand-recognition-vs-brand-awareness#:~:text=Brand%20recognition%20is%20the%20extent,general%20impressions%20about%20your%20brand.)
 
 
-![Digital Media Consupmtion in Mexico, infographics](Images/InfografiaConsumoMedios&Dispositivos.jpg)
+![Digital Media Consupmtion in Mexico, infographics](Images/InfografiaConsumoMedios_Dispositivos.jpg)
 
 
 <br>
