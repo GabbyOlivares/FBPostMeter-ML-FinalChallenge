@@ -73,7 +73,7 @@ Both, are steps that customer takes on the path to a purchase or becoming a loya
 
 ##### MAIN COUNTRIES WITH THE MOST FACEBOOK USERS, 2020
 
-![Main countries](Images/Chart1Map.png)
+![Main countries](Images/ChartMap.png)
 
 
 
