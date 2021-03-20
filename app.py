@@ -4,6 +4,7 @@ from joblib import dump, load
 import sklearn
 import json
 
+#Model
 with open(f'model/FBRandomForest_model_vf.joblib', 'rb') as f:
     model = load(f)
 
