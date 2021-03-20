@@ -27,6 +27,10 @@
         <!-- Bubble Chart-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+          <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/css/styles.css">
+        <link rel="stylesheet" href="../static/css/d3Style.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -53,7 +57,23 @@
             <div class="container">
                 <div class="masthead-subheading">Welcome To Posts*Meter!</div>
                 <div class="masthead-heading text-uppercase">Analyze your Facebook company´s posts</div>
-                <a class="btn btn-primary btn-xl text-upperc ase js-scroll-trigger" href="https://www.youtube.com/watch?v=ihnUg0_eS8Q">Click to see Social Media Rank history!</a>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <!--**La linea 63 inserta la liga del video en un boton**-->
+                <!--<a class="btn btn-primary btn-xl text-upperc ase js-scroll-trigger" target="_self" href="https://www.youtube.com/watch?v=ihnUg0_eS8Q">Click to see Social Media Rank history!</a>-->
+                
+                
+                <!--**La linea 67-70 inserta el video en la pantalla principal. IMPORTANTE: para que se vean los videos
+                no se pone el link original sino embed/clave video youtube /embed/ihnUg0_eS8Q. Si se teclea todo el link
+                como en el caso anterior NO SE VISUALIZA!!** -->
+                <iframe width="1200" height="600"
+                src="https://www.youtube.com/embed/ihnUg0_eS8Q?autoplay=1&mute=1&playlist=ihnUg0_eS8Q&loop=1">
+               
+                </iframe>
             </div>
         </header>
         <!-- Services-->
@@ -65,20 +85,17 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <img class="img-fluid" src="../static/assets/img/target.png" alt="" />
+                        <img class="img-fluid" src="../static/assets/img/target14.png" alt="" />
                         <h4 class="my-3">Accuracy</h4>
                         <p class="text-muted">The model is based on a machine learning algorithm proven to work with an accuracy of 86%.</p>
                     </div>
                     <div class="col-md-4">
-                        <img class="img-fluid" src="../static/assets/img/time3.png" alt="" />
+                        <img class="img-fluid" src="../static/assets/img/time1.jpg" alt="" />
                         <h4 class="my-3">Time Saving</h4>
                         <p class="text-muted">It saves a huge amount of time for your community manager and marketing department.</p>
                     </div>
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
+                        <img class="img-fluid" src="../static/assets/img/security.jpg" alt="" />
                         <h4 class="my-3">Security</h4>
                         <p class="text-muted">Your data is not stored anywhere. Only you will be able to see it! There is no need to share any information of your FB company´s account.</p>
                     </div>
@@ -99,10 +116,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="../static/assets/img/happy.jpg" alt="" />
+                                <img class="img-fluid" src="../static/assets/img/faceHappy6.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Successful Posts</div>
+                                <div class="portfolio-caption-heading">Success Posts</div>
                                 <div class="portfolio-caption-subheading text-muted">Click to review the results</div>
                             </div>
                         </div>
@@ -113,7 +130,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="../static/assets/img/wrong-multicolor-icon-with-png-and-vector-format-for-free-wrong-png-512_512.png" alt="" />
+                                <img class="img-fluid" src="../static/assets/img/faceSad3.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Failure Posts</div>
@@ -127,7 +144,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="../static/assets/img/unnamed.png" alt="" />
+                                <img class="img-fluid" src="../static/assets/img/faceHappy2.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Try it!</div>
@@ -141,32 +158,19 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="../static/assets/img/man-head-ai-circle-icon-vector-27719478.jpg" alt="" />
+                                <img class="img-fluid" src="../static/assets/img/faceHow2.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">How it Works?</div>
-                                <div class="portfolio-caption-subheading text-muted">Click here to deep dive into the model and understand how it works!</div>
+                                <div class="portfolio-caption-subheading text-muted">Deep dive into the model and check how it works!</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-            <div class="container.fluid">
-                <!--Add another container to "center" content-->
-                <div class = "container-fluid">
-                <div id="bubble"></div>    
-                <!--End  of the fluid containers, do not errase-->
-                </div>
-            </div>
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-            <script src="../static/js/bubble.js"></script>
         <!-- About-->
+        <a href="https://www.kaggle.com/masoodanzar/facebook-metrics" class="section-subheading text-muted">Click here to visit our DATA SOURCE!</a>
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
@@ -175,7 +179,7 @@
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/socialmedia-mn2s.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/unnamed.png" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">Brand Identity</h4>
@@ -193,7 +197,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/love-512.png" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/interaction.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">Interaction</h4>
@@ -202,7 +206,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/customer-engagement.png" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/customer-engagement6.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">User Engagement</h4>
@@ -223,19 +227,35 @@
                     </li>
                 </ul>
             </div>
-        <!-- FB importance-->
-            <div class="py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12">
-                            <a href="https://www.kaggle.com/masoodanzar/facebook-metrics"><img class="img-fluid d-block mx-auto" src="../static/assets/img/Chart3bubble.png" alt="" /></a>
-                         <p class="section-subheading text-muted">Click the chart to visit our DATA SOURCE!</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <!--Bubble chart--> 
+            <p class="section-heading text-uppercase">COMPARISON BETWEEN LIKES, SHARES, COMMENTS AND SUCCESSFULNESS</p> 
+                <div class="col-md-2">
+                  <div class="well">
+                    <!--<p class="section-heading text-uppercase">COMPARISON BETWEEN LIKES, SHARES, COMMENTS AND SUCCESSFULNESS</p>--> 
+                    <h5>Post type</h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)">
+                      <option value= "All">All</option>
+                      <option value = "1">Successful</option>
+                      <option value = "0">Unsuccessful</option>
+                      
+                      </select>
+                  </div>
                 </div>
-            </div>
+              <div id="bubble"></div>
+
+            <br/>
+            <br/>
+
             <div class="text-center">
                 <p class="section-heading text-uppercase">Countries with the most Facebook users 2020</p> 
             </div>
             <div id="map"></div>
+            <br/>
+            <br/>
             <div class="text-center">
                 <div class="col-xs-12 col-md-12">
                 <p class="section-heading text-uppercase">   </p>
@@ -248,7 +268,7 @@
                   <div id="plot">
                     <!-- We append our chart here. -->
                 </div>
-                <select id="selDataset">
+                <select id="selDataset2">
                   <option value="dataset1">FB #users</option>
                   <option value="dataset2">Penetration %rate</option>
                 </select>
@@ -262,59 +282,58 @@
                     <h3 class="section-subheading text-muted">Team of 5 outstanding professionals!</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="../static/assets/img/team/clemen.jpg" alt="" />
                             <h4>Clemente Sanchez</h4>
-                            <p class="text-muted">CEO</p>
+                            <p class="text-muted">Back End Developer</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://github.com/ClementsMX"><i class="fab fa-github"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="http://www.linkedin.com/in/clemente21"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-2">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="../static/assets/img/team/adri.jpg" alt="" />
                             <h4>Adriana Avalos</h4>
-                            <p class="text-muted">CIO</p>
+                            <p class="text-muted">Data Scientist</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://github.com/Adriana-Avalos-Vargas"><i class="fab fa-github"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/dr-adriana-avalos-51003b147/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-2">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="../static/assets/img/team/pam.jpeg" alt="" />
                             <h4>Pamela Hernandez</h4>
-                            <p class="text-muted">COO</p>
+                            <p class="text-muted">Front End Developer</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://github.com/PamHvv14"><i class="fab fa-github"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/pamela.hvv"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/pamelahvv"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-2">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="../static/assets/img/team/lau.jpg" alt="" />
                             <h4>Laura Torres</h4>
-                            <p class="text-muted">CFO</p>
+                            <p class="text-muted">Data Analyst</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://github.com/ltorresfd"><i class="fab fa-github"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/lauratorresfdz/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-2">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="../static/assets/img/team/gaby.jpg" alt="" />
                             <h4>Gabriela Olivares</h4>
-                            <p class="text-muted">CMO</p>
+                            <p class="text-muted">Data Analyst</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://github.com/GabbyOlivares"><i class="fab fa-github"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/gabbyloamiolivares/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
+                    </div>
+                    <div class="col-lg-1"></div>
                 </div>
             </div>
         </section>
@@ -351,6 +370,7 @@
                     <div class="text-center">
                         <div id="success"></div>
                         <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="resetButton" type="reset">Reset</button>
                     </div>
                 </form>
             </div>
@@ -385,7 +405,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Succesful Posts</h2>
                                     <p class="item-intro text-muted">Parameters of 3 succesful posts</p>
-                                    <img class="img-fluid d-block mx-auto" src="../static/assets/img/portfolio/succes.png" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="../static/assets/img/portfolio/succes2.png" alt="" />
                                     <table>
                                         <tr>
                                           <th>Page Likes</th>
@@ -456,7 +476,7 @@
                                     <h2 class="text-uppercase">Unsuccesful Posts</h2>
                                     <p class="item-intro text-muted">Parameters of 3 unsuccesful posts</p>
                                     <p class="item-intro text-muted"></p>
-                                    <img class="img-fluid d-block mx-auto" src="../static/assets/img/portfolio/fail.png" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="../static/assets/img/portfolio/fail5.jpg" alt="" />
                                     <table>
                                         <tr>
                                           <th>Page Likes</th>
@@ -525,58 +545,99 @@
                 </div>
             </div>
         </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../static/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Customizable Scenario</h2>
-                                    <p class="item-intro text-muted">Please choose the combination to predict whether the post will be successful or not .</p>
-                                        <form id="form-input" action="{{ url_for('modelP') }}" method="POST">
-                                            <div class="form-group">
-                                                <legend>Input Variables</legend>
-                                                <br>Avg Page Likes:<br>
-                                                <input id="avgpagelikes" name="avgpagelikes" type="number" class="form-control" required>
-                                                <br>
-                                                <br>Post Type 1 = Link, 2 = Photo, 3 = Status, 4 = Video<br>
-                                                <input id="posttype" name="posttype" type="number" class="form-control" required>
-                                                <br>
-                                                <br>Post Category 1 = Action, 2 = Product 3 = Inspiration <br>
-                                                <input id="postcategory" name="postcategory" type="number" class="form-control" required>
-                                                <br>
-                                                <br>Publication Month (1 - 12)<br>
-                                                <input id="month" name="month" type="number" class="form-control" required>
-                                                <br>
-                                                <br>Publication Week Day (0 -7 starting Sunday)<br>
-                                                <input id="weekday" name="weekday" type="number" class="form-control" required>
-                                                <br>
-                                                <br>Publication Hour (1 - 23 HRS)<br>
-                                                <input id="hour" name="hour" type="number" class="form-control" required>
-                                                <br>
-                                                <br>Paid Publication? 0 = Yes 1 = No <br>
-                                                <input id="paid" name="paid" type="number" class="form-control" required>
-                                                <br>Avg of unique users Per Post<br>
-                                                <input id="unique" name="unique" type="number" class="form-control" required>
-                                                <br>
-                                                <input id="send" type="submit" value="Submit" class="btn btn-primary">
-                                            </div>
-                                        </form>
-                                        <br>
-                                        <h1>The post will be:</h1>
-                                        <div id="result" style="font-size:50px" text-align="center">
+       <!-- Modal 3-->
+       <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="../static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Customizable Scenario</h2>
+                                <p class="item-intro text-muted">Please choose the combination to predict whether the post will be successful or not .</p>
+                                    <form id="form-input" action="{{ url_for('modelP') }}" method="POST">
+                                        <div class="form-group">
+                                            <legend>Input Variables</legend>
+                                            <br>Avg Page Likes:<br>
+                                            <input id="avgpagelikes" name="avgpagelikes" type="number" class="form-control" required>
+                                            <br>
+                                            <br>Post Type 1 = Link, 2 = Photo, 3 = Status, 4 = Video<br>
+                                            <input id="posttype" name="posttype" type="number" class="form-control" list="posttype1" required>
+                                                <datalist id="posttype1">
+                                                <option value="1"> Link</option>
+                                                <option value="2"> Photo</option>
+                                                <option value="3"> Status</option>
+                                                <option value="4"> Video</option>
+                                                </datalist>
+                                            <br>
+                                            <br>Post Category 1 = Action, 2 = Product 3 = Inspiration <br>
+                                            <input id="postcategory" name="postcategory" type="number" class="form-control" list="postcat" required>
+                                                <datalist id="postcat">
+                                                <option value="1"> Action</option>
+                                                <option value="2"> Product</option>
+                                                <option value="3"> Inspiration</option>
+                                                </datalist>
+                                            <br>
+                                            <br>Publication Month (1 - 12)<br>
+                                            <input id="month" name="month" type="number" class="form-control" list="months" required>
+                                                <datalist id="months">
+                                                <option value="1"> January</option>
+                                                <option value="2"> February</option>
+                                                <option value="3"> March</option>
+                                                <option value="4"> April</option>
+                                                <option value="5"> May</option>
+                                                <option value="6"> June</option>
+                                                <option value="7"> July</option>
+                                                <option value="8"> August</option>
+                                                <option value="9"> September</option>
+                                                <option value="10"> October</option>
+                                                <option value="11"> November</option>
+                                                <option value="12"> December</option>
+                                                </datalist>
+                                            <br>
+                                            <br>Publication Week Day (1 -7 starting Sunday)<br>
+                                            <input id="weekday" name="weekday" type="number" class="form-control" list="weekdays" required>
+                                                <datalist id="weekdays">
+                                                <option value="1"> Sunday</option>
+                                                <option value="2"> Monday</option>
+                                                <option value="3"> Tuesday</option>
+                                                <option value="4"> Wednesday</option>
+                                                <option value="5"> Thursday</option>
+                                                <option value="6"> Friday</option>
+                                                <option value="7"> Saturday</option>
+                                                </datalist>
+                                            <br>
+                                            <br>Publication Hour (1 - 23 HRS)<br>
+                                            <input id="hour" name="hour" type="number" class="form-control" required>
+                                            <br>
+                                            <br>Paid Publication? 0 = Yes 1 = No <br>
+                                            <input id="paid" name="paid" type="number" class="form-control" list="paids" required>
+                                                <datalist id="paids">
+                                                <option value="0"> Yes</option>
+                                                <option value="1"> No</option>
+                                                </datalist>
+                                            <br>Avg of unique users Per Post<br>
+                                            <input id="unique" name="unique" type="number" class="form-control" required>
+                                            <br>
+                                            <input id="send" type="submit" value="Submit" class="btn btn-primary">
+                                            <input type="reset" value="Reset" class="btn btn-primary">
                                         </div>
-                                </div>
+                                    </form>
+                                    <br>
+                                    <h1>The post will be:</h1>
+                                    <div id="result" style="font-size:50px" text-align="center">
+                                    
+                                    </div>
+                                    
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         <!-- Modal 4-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -662,6 +723,17 @@ b. OUTPUT FEATURES: metrics or KPI's
                 </div>
             </div>
         </div>
+        <!-- A bit of CSS: change stroke color of circle on hover (white -> black) -->
+        <style>
+        .bubbles {
+        stroke-width: 1px;
+        stroke: black;
+        opacity: .8
+        }
+        .bubbles:hover {
+        stroke: black;
+        }
+        </style>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -683,5 +755,13 @@ b. OUTPUT FEATURES: metrics or KPI's
         <script src="../static/js/FBusers.js"></script>
         <!-- Model -->
         <script src="../static/js/model.js"></script>
+        <!-- complements -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script type="text/javascript" src="../static/js/bubble_sel.js"></script>
+
     </body>
 </html>

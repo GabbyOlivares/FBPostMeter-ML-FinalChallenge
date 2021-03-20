@@ -16,7 +16,7 @@ d3.selectAll("body").on("change", updatePlotly);
 // This function is called when a dropdown menu item is selected
 function updatePlotly() {
   // Use D3 to select the dropdown menu
-  var dropdownMenu = d3.select("#selDataset");
+  var dropdownMenu = d3.select("#selDataset2");
   // Assign the value of the dropdown menu option to a variable
   var dataset = dropdownMenu.node().value;
 

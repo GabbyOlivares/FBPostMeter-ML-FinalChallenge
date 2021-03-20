@@ -10510,3 +10510,11 @@ thead th:nth-child(4) {
 th, td {
   padding: 20px;
 }
+.bubbles {
+  stroke-width: 1px;
+  stroke: black;
+  opacity: .8
+}
+.bubbles:hover {
+  stroke: black;
+}
