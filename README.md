@@ -31,16 +31,16 @@
 ## TEAM EXPERTS
 
 
-### Adriana Avalos [![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/) [![GitHub](images/smgthb.png)](https://github.com/Adriana-Avalos-Vargas)
+### Adriana Avalos [![Linkedin](images/smlnkdin.png)](https://www.linkedin.com/in/dr-adriana-avalos-51003b147/) [![GitHub](images/smgthub.png)](https://github.com/Adriana-Avalos-Vargas)
 
-### Laura Torres [![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/lauratorresfdz/) [![GitHub](images/smgthb.png)](https://github.com/ltorresfdz)
+### Laura Torres [![Linkedin](images/smlnkdin.png)](https://www.linkedin.com/in/lauratorresfdz/) [![GitHub](images/smgthub.png)](https://github.com/ltorresfdz)
 
-### Pamela Hernandez [![Linkedin](images/smlkdin.png)](http://www.linkedin.com/in/pamelahvv) [![GitHub](images/smgthb.png)](https://github.com/PamHvv14)
+### Pamela Hernandez [![Linkedin](images/smlnkdin.png)](http://www.linkedin.com/in/pamelahvv) [![GitHub](images/smgthub.png)](https://github.com/PamHvv14)
 
-### Clemente Sanchez [![Linkedin](images/smlkdin.png)](http://www.linkedin.com/in/clemente21) [![GitHub](images/smgthb.png)](https://github.com/ClementsMX)
+### Clemente Sanchez [![Linkedin](images/smlnkdin.png)](http://www.linkedin.com/in/clemente21) [![GitHub](images/smgthub.png)](https://github.com/ClementsMX)
 
 
-### Gabby Olivares [![Linkedin](images/smlkdin.png)](https://www.linkedin.com/in/gabbyloamiolivares/) [![GitHub](images/smgthb.png)](https://github.com/GabbyOlivares)
+### Gabby Olivares [![Linkedin](images/smlnkdin.png)](https://www.linkedin.com/in/gabbyloamiolivares/) [![GitHub](images/smgthub.png)](https://github.com/GabbyOlivares)
 
 <br>
 <br>
