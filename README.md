@@ -79,10 +79,10 @@ Both, are steps that customer takes on the path to a purchase or becoming a loya
 
 ##### NUMBER OF USERS AND PENETRATION RATES, MEXICO. SOCIAL MEDIA: FACEBOOK
 
-![Mexico #Users](Images/Chart2NumberFBusersMexico.png)
+![Mexico #Users](Images/Chart2NumberFBusersMex.png)
 
 
-![Mexico Penetration%](Images/Chart2PenetrationRateFBMexico.png)
+![Mexico Penetration%](Images/Chart2PenetrationRateFBMex.png)
 
 
 ##### BUBBLE CHART
