@@ -18,7 +18,8 @@ var svg = d3.select("#bubble")
   "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("../static/data/facebook_mock.csv").then(function(fbData) {
+//d3.csv("../static/data/facebook_mock.csv").then(function(fbData) {
+  d3.csv("https://github.com/GabbyOlivares/FBPostMeter-ML-FinalChallenge/blob/main/static/data/facebook_mock.csv").then(function(fbData){
     console.log("si leyo");
     console.log(fbData);
 
@@ -283,7 +284,8 @@ function bubbleChart(sample){
                   "translate(" + margin.left + "," + margin.top + ")");
 
             //Read the data
-            d3.csv("../static/data/facebook_mock.csv").then(function(facebookData) {
+            //d3.csv("../static/data/facebook_mock.csv").then(function(facebookData) {
+              d3.csv("https://github.com/GabbyOlivares/FBPostMeter-ML-FinalChallenge/blob/main/static/data/facebook_mock.csv").then(function(facebookData){
                 console.log("si leyo");
                 //console.log(fbData);
 
